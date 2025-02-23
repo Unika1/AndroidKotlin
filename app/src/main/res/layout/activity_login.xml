@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/main"
+    android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activity.LoginActivity">
@@ -66,7 +67,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
         android:text="Login"
-        android:backgroundTint="@color/maroon"
+        android:backgroundTint="@color/green"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
