@@ -7,7 +7,7 @@ import com.example.newproject.repository.RemedyRepository
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class RemedyViewModel (val repository: RemedyRepository):ViewModel(){
+class RemedyAddingViewModel (val repository: RemedyRepository):ViewModel(){
     val database: DatabaseReference = FirebaseDatabase.getInstance().reference
 
     val remedyStatus = MutableLiveData<String>()
