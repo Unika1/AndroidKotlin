@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvCustomerName"
+        android:id="@+id/tvRemedyTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remedy Name"
@@ -19,7 +19,7 @@
         android:textColor="@android:color/black" />
 
     <TextView
-        android:id="@+id/tvDateTime"
+        android:id="@+id/tvRemedyDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date: Time:"
@@ -28,7 +28,7 @@
         android:layout_marginTop="4dp" />
 
     <TextView
-        android:id="@+id/tvGuests"
+        android:id="@+id/tvRemedyProcedure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guests: "
@@ -45,7 +45,7 @@
         android:gravity="end">
 
         <Button
-            android:id="@+id/btnedittablebooking"
+            android:id="@+id/btnEditRemedy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Edit"
@@ -54,7 +54,7 @@
             android:layout_marginEnd="8dp"/>
 
         <Button
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnDeleteRemedy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete"

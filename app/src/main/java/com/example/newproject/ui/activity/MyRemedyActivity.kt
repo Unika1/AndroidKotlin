@@ -3,6 +3,7 @@ package com.example.newproject.ui.activity
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -66,14 +67,19 @@ class MyRemedyActivity : AppCompatActivity() {
     }
 
     private fun observeViewModel() {
-        remedyViewModel.remedyList.observe(this) { remedies ->
+        remedyAddingViewModel.remediesList.observe(this) { remedies ->
             adapter.updateList(remedies)
         }
 
-        remedyViewModel.remedyStatus.observe(this) { status ->
+        remedyAddingViewModel.remedyStatus.observe(this) { status ->
             loadingUtils.dismiss()
             Toast.makeText(this, status, Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun onDeleteRemedy(remedyId: String) {
+        loadingUtils.show()
+        remedyAddingViewModel.deleteRemedy(remedyId)
     }
 
 
