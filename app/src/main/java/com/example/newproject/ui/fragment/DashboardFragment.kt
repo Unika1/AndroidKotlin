@@ -27,7 +27,7 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.bookATableButton.setOnClickListener({
+        binding.addRemedyButton.setOnClickListener({
             val intent = Intent(requireContext(), TableBookingActivity::class.java)
             startActivity(intent)
         })

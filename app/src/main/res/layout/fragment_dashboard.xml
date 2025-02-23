@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delicious Deck"
+            android:text="Earthly Glow"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -45,10 +45,10 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <Button
-            android:id="@+id/bookATableButton"
+            android:id="@+id/addRemedyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/maroon"
+            android:backgroundTint="@color/green"
             android:text="Add Remedy"
             android:onClick="bookATable"
             android:textColor="@color/white" />
@@ -60,20 +60,21 @@
         android:id="@+id/specialOffersScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:orientation="horizontal"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="210dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/orderPriceLayout" />
 
     <!-- Popular Dishes Section -->
     <TextView
         android:id="@+id/popularDishesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Popular Dishes"
+        android:text="Popular Remedies"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
@@ -114,15 +115,15 @@
                 <ImageView
                     android:layout_width="75dp"
                     android:layout_height="63dp"
-                    android:contentDescription="Popular Dish"
-                    android:src="@drawable/momo" />
+                    android:contentDescription="Popular Remedies"
+                    android:src="@drawable/acnecare" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Momo"
+                    android:text="Acne Care"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -149,14 +150,48 @@
                     android:layout_width="75dp"
                     android:layout_height="63dp"
                     android:contentDescription="Popular Dish"
-                    android:src="@drawable/khanaset" />
+                    android:src="@drawable/dryskin" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Khana Set"
+                    android:text="Dry Skin Care"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="63dp"
+                    android:contentDescription="Popular Remedy"
+                    android:src="@drawable/naturaltoner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Natural Toner"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -183,14 +218,14 @@
                     android:layout_width="75dp"
                     android:layout_height="63dp"
                     android:contentDescription="Popular Dish"
-                    android:src="@drawable/yomari" />
+                    android:src="@drawable/skinwhitening" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Yomari"
+                    android:text="skin whitening"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -217,14 +252,14 @@
                     android:layout_width="75dp"
                     android:layout_height="63dp"
                     android:contentDescription="Popular Dish"
-                    android:src="@drawable/dhidoset" />
+                    android:src="@drawable/wrinklecare" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Dhido Set"
+                    android:text="Skin Whitening"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -251,48 +286,14 @@
                     android:layout_width="75dp"
                     android:layout_height="63dp"
                     android:contentDescription="Popular Dish"
-                    android:src="@drawable/panipuri" />
+                    android:src="@drawable/undereyecare" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Pani Puri"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_margin="8dp">
-
-            <LinearLayout
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="63dp"
-                    android:contentDescription="Popular Dish"
-                    android:src="@drawable/chatpate" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Chatpate"
+                    android:text="under"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -322,8 +323,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginBottom="44dp"
-        android:backgroundTint="@color/maroon"
-        android:text="View Menu"
+        android:backgroundTint="@color/green"
+        android:text="View Remedy"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
         app:layout_constraintStart_toStartOf="parent" />
