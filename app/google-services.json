@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "478162938010",
+    "firebase_url": "https://earthly-glow-final-default-rtdb.firebaseio.com",
+    "project_id": "earthly-glow-final",
+    "storage_bucket": "earthly-glow-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478162938010:android:7167e1621a7a0aa77bd723",
+        "android_client_info": {
+          "package_name": "com.example.newproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq8CUfx7aCzYB5gMkEd7BIsZWCDiK06BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
