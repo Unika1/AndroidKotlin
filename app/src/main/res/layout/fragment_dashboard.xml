@@ -293,7 +293,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="under"
+                    android:text=" Under Eye care"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -316,17 +316,5 @@
         app:layout_constraintTop_toBottomOf="parent">
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginBottom="44dp"
-        android:backgroundTint="@color/green"
-        android:text="View Remedy"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.example.newproject.R
 import com.example.newproject.databinding.ActivityTableBookingBinding
 import com.example.newproject.databinding.FragmentDashboardBinding
-import com.example.newproject.ui.activity.SettingsActivity
+import com.example.newproject.ui.activity.RemedyAddingActivity
 import com.example.newproject.ui.activity.TableBookingActivity
 
 class DashboardFragment : Fragment() {
@@ -28,18 +28,9 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.addRemedyButton.setOnClickListener({
-            val intent = Intent(requireContext(), TableBookingActivity::class.java)
+            val intent = Intent(requireContext(), RemedyAddingActivity::class.java)
             startActivity(intent)
         })
-
-        binding.button.setOnClickListener {
-            val fragment = NotificationFragment()
-            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.frameBottom, fragment)  // Replace with your fragment container ID
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-
 
     }
 
