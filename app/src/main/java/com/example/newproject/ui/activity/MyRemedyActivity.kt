@@ -1,6 +1,5 @@
 package com.example.newproject.ui.activity
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -18,12 +17,11 @@ import com.example.newproject.utils.LoadingUtils
 import com.example.newproject.viewmodel.RemedyAddingViewModel
 
 class MyRemedyActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMyRemedyBinding
     lateinit var remedyAddingViewModel: RemedyAddingViewModel
     lateinit var adapter: RemedyAdapter
     lateinit var loadingUtils: LoadingUtils
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +37,8 @@ class MyRemedyActivity : AppCompatActivity() {
 
         setupRecyclerView()
         observeViewModel()
+
+        remedyAddingViewModel.getRemedies()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -81,6 +81,4 @@ class MyRemedyActivity : AppCompatActivity() {
         loadingUtils.show()
         remedyAddingViewModel.deleteRemedy(remedyId)
     }
-
-
 }
